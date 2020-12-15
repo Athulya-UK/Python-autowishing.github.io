@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block body %}
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Add Contact</span>
+                <span class="section-heading-lower">Birthday Wishing</span>
+              </h2>
+               <form name="sentMessage" id="contactForm" action="/birthdaywishing" method="post"  novalidate>
+
+            <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+
+                <input type="text" class="form-control" placeholder="Enter Name" id="Name" name="Name" required data-validation-required-message="Please enter your Name.">
+              <p class="help-block text-danger"></p>
+                 </div>
+          </div>
+             <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+
+                 <input type="date" class="form-control" placeholder="Enter Birthday" id="Birthday" name="Birthday" required data-validation-required-message="Please enter your Birthday.">
+              <p class="help-block text-danger"></p>
+                 </div>
+          </div>
+              <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+
+                <textarea rows="5" class="form-control" placeholder="Enter Dialogue" id="Dialogue" name="Dialogue" required data-validation-required-message="Please enter a Dialogue."></textarea>
+              <p class="help-block text-danger"></p>
+              </div>
+          </div>
+                   <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+
+               <input type="number" class="form-control" placeholder="Enter Current Year" id="Year" name="Year" required data-validation-required-message="Please enter your Year.">
+              <p class="help-block text-danger"></p>
+                 </div>
+          </div>
+              <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+
+                  <input type="email" class="form-control" placeholder="Enter Email" id="Email" name="Email" required data-validation-required-message="Please enter your Email.">
+              <p class="help-block text-danger"></p>
+                 </div>
+          </div>
+
+
+  <button type="submit"  class="btn btn-primary">Submit</button>
+
+</form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
